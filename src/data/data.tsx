@@ -73,7 +73,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-white sm:prose-base lg:prose-lg">
-        A skilled and passionate <strong className="text-stone-100">Full Stack Web Developer</strong> with a remarkable ability to adopt and master trendy web development technologies and tools while crafting innovative solutions.
+        A skilled and passionate <strong className="text-stone-100">Full Stack Web Developer</strong> with a remarkable
+        ability to adopt and master trendy web development technologies and tools while crafting innovative solutions.
       </p>
     </>
   ),
@@ -105,11 +106,11 @@ export const aboutData: About = {
   Beyond technical expertise, I am a collaborative team player with clear communication and teamwork. I thrive in Agile/Scrum environments and I am highly regarded for your dedication to delivering high-quality, well-tested solutions. My adaptability, passion for continuous learning, and focus on functionality and aesthetics make me an invaluable asset to any team or project. 
   `,
   aboutItems: [
-    { label: 'Location', text: 'Hung Yen, Vietnam', Icon: MapIcon },
-    { label: 'Age', text: '32', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon },
-    { label: 'Interests', text: 'Reading', Icon: SparklesIcon },
-    { label: 'Study', text: 'Hanoi University of Science and Technology', Icon: AcademicCapIcon },
+    {label: 'Location', text: 'Hung Yen, Vietnam', Icon: MapIcon},
+    {label: 'Age', text: '32', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon},
+    {label: 'Interests', text: 'Reading', Icon: SparklesIcon},
+    {label: 'Study', text: 'Hanoi University of Science and Technology', Icon: AcademicCapIcon},
     // {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
 };
@@ -196,7 +197,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'Flutter',
         level: 10,
-      }
+      },
     ],
   },
 ];
@@ -292,13 +293,51 @@ export const experience: TimelineItem[] = [
     title: 'Senior Full-Stack Web Developer',
     content: (
       <ul>
-        <li><p> -  Worked on fully responsive web applications using React.js, Next.js, Node.js, AWS, and HighCharts.</p></li>
-        <li><p> - Integrated third-party APIs to enhance web application functionality, resulting in a 50% increase in user satisfaction and engagement.</p></li>
-        <li><p> - Debugged and resolved issues based on a priority system, leading to a 30% decrease in application downtime and improved reliability.</p></li>
-        <li><p> - Optimized the database queries and data structures, reducing load times, which significantly enhanced user retention rates.</p></li>
-        <li><p> - Analyzed user behavior patterns using Google Analytics and Adobe Analytics, resulting in a 10% increase in website conversion rates.</p></li>
-        <li><p> - Maintained consistent and clear communication with team members and stakeholders, ensuring alignment and understanding throughout the project lifecycle.</p></li>
-        <li><p> - Collaborated on project management efforts using Agile/Scrum methodologies, leading to on-time delivery of features that aligned with key business objectives and enhanced client relationships.</p></li>
+        <li>
+          <p> - Worked on fully responsive web applications using React.js, Next.js, Node.js, AWS, and HighCharts.</p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Integrated third-party APIs to enhance web application functionality, resulting in a 50% increase in user
+            satisfaction and engagement.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Debugged and resolved issues based on a priority system, leading to a 30% decrease in application downtime
+            and improved reliability.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Optimized the database queries and data structures, reducing load times, which significantly enhanced user
+            retention rates.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Analyzed user behavior patterns using Google Analytics and Adobe Analytics, resulting in a 10% increase in
+            website conversion rates.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Maintained consistent and clear communication with team members and stakeholders, ensuring alignment and
+            understanding throughout the project lifecycle.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Collaborated on project management efforts using Agile/Scrum methodologies, leading to on-time delivery of
+            features that aligned with key business objectives and enhanced client relationships.
+          </p>
+        </li>
       </ul>
     ),
   },
@@ -308,13 +347,51 @@ export const experience: TimelineItem[] = [
     title: 'Senior Full-Stack Developer',
     content: (
       <ul>
-        <li><p> - Delivered engaging and visually compelling web designs with a user-friendly UI that was cross-browser compatible and mobile responsive.</p></li>
-        <li><p> - Migrated hosting servers with detailed plans spanning simulating, testing, and setting up complex configurations.</p></li>
-        <li><p> - Streamlined a development process that improved efficiency and ensured high quality and easy-to-manage end products.</p></li>
-        <li><p> - Engineered optimized RESTful APIs that improved data retrieval speeds by 20%, significantly reducing load times for clients and contributing to overall customer satisfaction.</p></li>
-        <li><p> - Collaborated with cross-functional teams to integrate advanced analytics tools, empowering clients to leverage data insights, resulting in revenue growth of 30% for their campaigns.</p></li>
-        <li><p> - Worked extensively with CMS platforms, including Sitefinity, WordPress, and Drupal, delivering customized, scalable solutions for diverse clients.</p></li>
-        <li><p> - Integrated AWS services including AWS SES, CloudFront, S3, ACM, EC2, and etc.</p></li>
+        <li>
+          <p>
+            {' '}
+            - Delivered engaging and visually compelling web designs with a user-friendly UI that was cross-browser
+            compatible and mobile responsive.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Migrated hosting servers with detailed plans spanning simulating, testing, and setting up complex
+            configurations.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Streamlined a development process that improved efficiency and ensured high quality and easy-to-manage end
+            products.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Engineered optimized RESTful APIs that improved data retrieval speeds by 20%, significantly reducing load
+            times for clients and contributing to overall customer satisfaction.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Collaborated with cross-functional teams to integrate advanced analytics tools, empowering clients to
+            leverage data insights, resulting in revenue growth of 30% for their campaigns.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Worked extensively with CMS platforms, including Sitefinity, WordPress, and Drupal, delivering customized,
+            scalable solutions for diverse clients.
+          </p>
+        </li>
+        <li>
+          <p> - Integrated AWS services including AWS SES, CloudFront, S3, ACM, EC2, and etc.</p>
+        </li>
       </ul>
     ),
   },
@@ -324,9 +401,23 @@ export const experience: TimelineItem[] = [
     title: 'Senior SQL/Backend Developer',
     content: (
       <ul>
-        <li><p> - Debugged errors and problems within databases and applications.</p></li>
-        <li><p> - Developed and optimized SQL queries to process data sets, leading to a 25% increase in query performance and significantly improving reporting accuracy.</p></li>
-        <li><p> - Utilized performance tuning techniques on SQL databases, achieving optimal resource utilization and boosting overall application performance metrics by 10% within three months.</p></li>
+        <li>
+          <p> - Debugged errors and problems within databases and applications.</p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Developed and optimized SQL queries to process data sets, leading to a 25% increase in query performance
+            and significantly improving reporting accuracy.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Utilized performance tuning techniques on SQL databases, achieving optimal resource utilization and
+            boosting overall application performance metrics by 10% within three months.
+          </p>
+        </li>
       </ul>
     ),
   },
@@ -336,11 +427,37 @@ export const experience: TimelineItem[] = [
     title: 'Remote Senior Full-Stack Developer',
     content: (
       <ul>
-        <li><p> - Spearheaded the development of a complex web application, reducing load time by 10% and enhancing user experience, which led to an increase in customer satisfaction ratings by 30%.</p></li>
-        <li><p> - Engineered robust RESTful APIs that facilitated seamless integration with third-party services, resulting in more than 10% boost in operational efficiency.</p></li>
-        <li><p> - Implemented advanced data security measures across all applications, which decreased vulnerabilities by 20% and safeguarded customer information against potential threats.</p></li>
-        <li><p> - Optimized front-end architecture using Next.js, improving app responsiveness by 30% and driving an increase in end-user engagement metrics by 40%.</p></li>
-        <li><p> - Performed programming and content edits for existing web applications.</p></li>
+        <li>
+          <p>
+            {' '}
+            - Spearheaded the development of a complex web application, reducing load time by 10% and enhancing user
+            experience, which led to an increase in customer satisfaction ratings by 30%.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Engineered robust RESTful APIs that facilitated seamless integration with third-party services, resulting
+            in more than 10% boost in operational efficiency.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Implemented advanced data security measures across all applications, which decreased vulnerabilities by
+            20% and safeguarded customer information against potential threats.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Optimized front-end architecture using Next.js, improving app responsiveness by 30% and driving an
+            increase in end-user engagement metrics by 40%.
+          </p>
+        </li>
+        <li>
+          <p> - Performed programming and content edits for existing web applications.</p>
+        </li>
       </ul>
     ),
   },
@@ -350,12 +467,39 @@ export const experience: TimelineItem[] = [
     title: 'Frontend Web Developer',
     content: (
       <ul>
-        <li><p> - Developed responsive web applications using HTML, CSS, and JavaScript to improve user experience.</p></li>
-        <li><p> - Applied responsive design principles to ensure consistency across different devices and screen sizes.</p></li>
-        <li><p> - Collaborated with UX/UI designers to implement innovative solutions that increased customer satisfaction ratings by 25 %, directly contributing to the company's revenue growth.</p></li>
-        <li><p> - Reduced page load times by 0.3seconds through effective optimization techniques, resulting in a 20 % decrease in bounce rates across multiple projects.</p></li>
-        <li><p> - Led the initiative to migrate legacy web systems to modern frameworks, successfully completing the transition ahead of schedule and improving maintainability by 25 %.</p></li>
-        <li><p> - Participated in sprint planning meetings to prioritize tasks and set project milestones.</p></li>
+        <li>
+          <p> - Developed responsive web applications using HTML, CSS, and JavaScript to improve user experience.</p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Applied responsive design principles to ensure consistency across different devices and screen sizes.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Collaborated with UX/UI designers to implement innovative solutions that increased customer satisfaction
+            ratings by 25 %, directly contributing to the company's revenue growth.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Reduced page load times by 0.3seconds through effective optimization techniques, resulting in a 20 %
+            decrease in bounce rates across multiple projects.
+          </p>
+        </li>
+        <li>
+          <p>
+            {' '}
+            - Led the initiative to migrate legacy web systems to modern frameworks, successfully completing the
+            transition ahead of schedule and improving maintainability by 25 %.
+          </p>
+        </li>
+        <li>
+          <p> - Participated in sprint planning meetings to prioritize tasks and set project milestones.</p>
+        </li>
       </ul>
     ),
   },
@@ -376,7 +520,7 @@ export const testimonial: TestimonialSection = {
       name: 'Jeff Doe',
       text: 'An outstanding full-stack developer with strong expertise in front-end and back-end technologies, consistently delivering high-quality, efficient, and scalable solutions. Highly recommend!',
       // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    }
+    },
   ],
 };
 
@@ -410,9 +554,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/' },
-  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/'},
 ];

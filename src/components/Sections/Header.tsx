@@ -1,12 +1,12 @@
-import { Dialog, Transition } from '@headlessui/react';
-import { Bars3BottomRightIcon } from '@heroicons/react/24/outline';
+import {Dialog, Transition} from '@headlessui/react';
+import {Bars3BottomRightIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 // import Link from 'next/link';
-import { FC, Fragment, memo, useCallback, useMemo, useState } from 'react';
-import { Link } from 'react-scroll';
+import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
+import {Link} from 'react-scroll';
 
-import { SectionId } from '../../data/data';
-import { useNavObserver } from '../../hooks/useNavObserver';
+import {SectionId} from '../../data/data';
+import {useNavObserver} from '../../hooks/useNavObserver';
 
 export const headerID = 'headerNav';
 
@@ -31,15 +31,17 @@ const Header: FC = memo(() => {
   );
 });
 
-const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null }> = memo(
-  ({ navSections, currentSection }) => {
+const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
+  ({navSections, currentSection}) => {
     const baseClass =
       '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 sm:hover:text-neutral-700 text-neutral-100';
     const activeClass = classNames(baseClass, 'text-neutral-700');
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
 
     return (
-      <header className="shadow-md fixed top-0 z-50 hidden w-full bg-emerald-500 p-4 backdrop-blur sm:block" id={headerID}>
+      <header
+        className="shadow-md fixed top-0 z-50 hidden w-full bg-emerald-500 p-4 backdrop-blur sm:block"
+        id={headerID}>
         <nav className="flex justify-center gap-x-8">
           {navSections.map(section => (
             <NavItem
@@ -56,8 +58,8 @@ const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | nul
   },
 );
 
-const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null }> = memo(
-  ({ navSections, currentSection }) => {
+const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
+  ({navSections, currentSection}) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const toggleOpen = useCallback(() => {
@@ -125,18 +127,17 @@ const NavItem: FC<{
   activeClass: string;
   inactiveClass: string;
   onClick?: () => void;
-}> = memo(({ section, current, inactiveClass, activeClass, onClick }) => {
+}> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
   return (
     <Link
-      className={classNames(current ? activeClass : inactiveClass)}
-      key={section}
       activeClass="active"
-      to={section}
-      spy={true}
-      smooth={true}
+      className={classNames(current ? activeClass : inactiveClass)}
       duration={250}
+      key={section}
       onClick={onClick}
-      >
+      smooth={true}
+      spy={true}
+      to={section}>
       {section}
     </Link>
   );
