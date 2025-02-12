@@ -2,17 +2,17 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   // BuildingOffice2Icon,
-  CalendarIcon,
+  // CalendarIcon,
   FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import GithubIcon from '../components/Icon/GithubIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
+// import LinkedInIcon from '../components/Icon/LinkedInIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import headerBackground from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -25,6 +25,11 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
+import porfolioImage13 from '../images/portfolio/portfolio-13.jpg';
+import porfolioImage14 from '../images/portfolio/portfolio-14.jpg';
+import porfolioImage15 from '../images/portfolio/portfolio-15.jpg';
+import porfolioImage16 from '../images/portfolio/portfolio-16.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.jpg';
 import {
@@ -107,7 +112,7 @@ export const aboutData: About = {
   `,
   aboutItems: [
     {label: 'Location', text: 'Hung Yen, Vietnam', Icon: MapIcon},
-    {label: 'Age', text: '32', Icon: CalendarIcon},
+    // {label: 'Age', text: '32', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon},
     {label: 'Interests', text: 'Reading', Icon: SparklesIcon},
     {label: 'Study', text: 'Hanoi University of Science and Technology', Icon: AcademicCapIcon},
@@ -148,6 +153,10 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
+        name: 'Shopify',
+        level: 10,
+      },
+      {
         name: 'Bootstrap, Tailwind CSS',
         level: 10,
       },
@@ -171,6 +180,19 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    name: 'Mobile development',
+    skills: [
+      {
+        name: 'ReactNative',
+        level: 10,
+      },
+      {
+        name: 'Flutter',
+        level: 10,
+      },
+    ],
+  },
+  {
     name: 'Database development',
     skills: [
       {
@@ -186,20 +208,7 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
     ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 10,
-      },
-      {
-        name: 'Flutter',
-        level: 10,
-      },
-    ],
-  },
+  }
 ];
 
 /**
@@ -226,22 +235,53 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Kinedu',
-    description: 'Give a short description of your project here.',
+    description: 'A streamlined calendar appointment system designed to simplify scheduling, improve time management, and enhance productivity',
+    url: 'https://app.kinedu.com',
+    image: porfolioImage6,
+  },
+  {
+    title: 'Kinedu',
+    description: 'User-friendly UX/UI',
     url: 'https://app.kinedu.com',
     image: porfolioImage4,
   },
   {
     title: 'Kinedu',
-    description: '',
+    description: 'An intuitive list management to help organize tasks and prioritize efficiently.',
     url: 'https://app.kinedu.com',
     image: porfolioImage5,
+  },  
+  {
+    title: 'Hoozing',
+    description: 'Real-Estate Marketing Platform for Agents, Buyers, and Renters',
+    url: 'https://hoozing.com/en',
+    image: porfolioImage14,
+  },   
+  {
+    title: 'Hoozing',
+    description: 'Powerful, extensive search solutions for better results and efficiency.',
+    url: 'https://hoozing.com/en',
+    image: porfolioImage15,
+  },
+   
+  {
+    title: 'Hoozing',
+    description: 'Enabling quick, and seamless transactions.',
+    url: 'https://hoozing.com/en',
+    image: porfolioImage16,
   },
   {
-    title: 'Kinedu',
-    description: '',
-    url: 'https://app.kinedu.com',
-    image: porfolioImage6,
+    title: 'Worbler AI',
+    description: 'AI-powered platform | Video/Audio Converter',
+    url: 'https://worbler.ai',
+    image: porfolioImage11,
   },
+  {
+    title: 'Elephantstock',
+    description: 'A user-friendly UI that allows customers to easily view and proceed with their purchases for a seamless shopping experience',
+    url: 'https://www.elephantstock.com/',
+    image: porfolioImage13,
+  },  
   {
     title: 'Escape Outdoors',
     description: 'Outdoor sports store | Fully responsive e-commerce website',
@@ -250,27 +290,27 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Escape Outdoors',
-    description: 'Product list page',
+    description: 'A dynamic product list page that allows easy browsing and filtering of items for a smooth shopping experience.',
     url: 'https://www.escapeoutdoors.com',
     image: porfolioImage8,
   },
   {
     title: 'Escape Outdoors',
-    description: 'Product detail view',
+    description: 'A comprehensive product detail page that provides essential information, and easy navigation to help customers make informed purchasing decisions.',
     url: 'https://www.escapeoutdoors.com',
     image: porfolioImage9,
   },
   {
     title: 'Escape Outdoors',
-    description: 'Cart page',
+    description: 'A clean, intuitive website with clear navigation and seamless checkout.',
     url: 'https://www.escapeoutdoors.com',
     image: porfolioImage10,
   },
   {
-    title: 'Worbler AI',
-    description: 'AI-powered platform | Video/Audio Converter',
-    url: 'https://worbler.ai',
-    image: porfolioImage11,
+    title: 'Book Hotels Website',
+    description: 'Tripvillas is a website that allows travelers to book Holiday Homes and Homestays instead of Hotels and Resorts.',
+    url: 'https://www.tripvillas.com/',
+    image: porfolioImage12,
   },
 ];
 
@@ -396,7 +436,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'September 2019 - February 2020',
+    date: 'September 2018 - February 2019',
     location: 'Miles IT',
     title: 'Senior SQL/Backend Developer',
     content: (
@@ -422,7 +462,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'February 2017 - May 2019',
+    date: 'March 2017 - May 2019',
     location: 'Applancer',
     title: 'Remote Senior Full-Stack Developer',
     content: (
@@ -512,14 +552,17 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Adam S.',
+      name: 'Brian H.',
       text: 'Working with this individual has been an exceptional experience. Her ability to tackle challenges with innovative solutions and maintain a positive attitude is truly inspiring. Highly recommend!',
       // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jeff Doe',
-      text: 'An outstanding full-stack developer with strong expertise in front-end and back-end technologies, consistently delivering high-quality, efficient, and scalable solutions. Highly recommend!',
-      // image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Jeff D.',
+      text: 'An excellent full-stack developer with strong expertise in front-end and back-end technologies, consistently delivering high-quality, efficient, and scalable solutions.',
+    },
+    {
+      name: 'David S.',
+      text: 'Perfect job, code completed fast and everything works perfectly. Highly recommended!',
     },
   ],
 };
@@ -554,9 +597,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/'},
+  // {label: 'Github', Icon: GithubIcon, href: 'https://github.com/'},
+  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/'},
+  // {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/'},
 ];
