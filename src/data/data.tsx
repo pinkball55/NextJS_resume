@@ -49,8 +49,9 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'NextJS Resume',
-  description: "Full-stack developer resume",
+  title: 'Huong Nguyen',
+  description: 'Experienced Full Stack Developer specializing in custom e-commerce solutions, Shopify development, React, Next.js, and scalable web applications. Explore my portfolio to see high-performance websites tailored to your needs.',
+  keywords:"Huong Nguyen, Vietnam, Full Stack Developer, Custom E-commerce Solutions, Shopify Developer, React Developer, Next.js Developer, Web Application Developer, Full Stack Web Developer Portfolio, Shopify Store Development, Scalable Web Applications, Front-End Developer, Back-End Developer, Node.js, Express, PostgreSQL, API Integration Developer, SEO-Friendly Web Development, High-Performance Websites, Custom Web Solutions, JavaScript Frameworks Developer, UX Design, UI Design"
 };
 
 /**
@@ -88,6 +89,7 @@ export const heroData: Hero = {
       href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
+      target: '_blank',
       Icon: ArrowDownTrayIcon,
     },
     {
@@ -208,7 +210,7 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
     ],
-  }
+  },
 ];
 
 /**
@@ -235,7 +237,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Kinedu',
-    description: 'A streamlined calendar appointment system designed to simplify scheduling, improve time management, and enhance productivity',
+    description:
+      'A streamlined calendar appointment system designed to simplify scheduling, improve time management, and enhance productivity',
     url: 'https://app.kinedu.com',
     image: porfolioImage6,
   },
@@ -250,23 +253,23 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'An intuitive list management to help organize tasks and prioritize efficiently.',
     url: 'https://app.kinedu.com',
     image: porfolioImage5,
-  },  
+  },
   {
     title: 'Hoozing',
     description: 'Real-Estate Marketing Platform for Agents, Buyers, and Renters',
     url: 'https://hoozing.com/en',
     image: porfolioImage14,
-  },   
+  },
   {
     title: 'Hoozing',
     description: 'Powerful, extensive search solutions for better results and efficiency.',
     url: 'https://hoozing.com/en',
     image: porfolioImage15,
   },
-   
+
   {
     title: 'Hoozing',
-    description: 'Enabling quick, and seamless transactions.',
+    description: 'Enabling quick, and seamless transactions for buyers and sellers.',
     url: 'https://hoozing.com/en',
     image: porfolioImage16,
   },
@@ -278,10 +281,11 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Elephantstock',
-    description: 'A user-friendly UI that allows customers to easily view and proceed with their purchases for a seamless shopping experience',
+    description:
+      'A user-friendly UI that allows customers to easily view and proceed with their purchases for a seamless shopping experience',
     url: 'https://www.elephantstock.com/',
     image: porfolioImage13,
-  },  
+  },
   {
     title: 'Escape Outdoors',
     description: 'Outdoor sports store | Fully responsive e-commerce website',
@@ -290,13 +294,15 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Escape Outdoors',
-    description: 'A dynamic product list page that allows easy browsing and filtering of items for a smooth shopping experience.',
+    description:
+      'A dynamic product list page that allows easy browsing and filtering of items for a smooth shopping experience.',
     url: 'https://www.escapeoutdoors.com',
     image: porfolioImage8,
   },
   {
     title: 'Escape Outdoors',
-    description: 'A comprehensive product detail page that provides essential information, and easy navigation to help customers make informed purchasing decisions.',
+    description:
+      'A comprehensive product detail page that provides essential information, and easy navigation to help customers make informed purchasing decisions.',
     url: 'https://www.escapeoutdoors.com',
     image: porfolioImage9,
   },
@@ -308,7 +314,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Book Hotels Website',
-    description: 'Tripvillas is a website that allows travelers to book Holiday Homes and Homestays instead of Hotels and Resorts.',
+    description:
+      'Tripvillas is a website that allows travelers to book Holiday Homes and Homestays instead of Hotels and Resorts.',
     url: 'https://www.tripvillas.com/',
     image: porfolioImage12,
   },
@@ -319,7 +326,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'March 2016',
+    date: 'March 2014',
     location: 'Hanoi, Vietnam',
     title: 'Hanoi University of Science and Technology',
     content: <p>Computer Science</p>,

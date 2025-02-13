@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": "dist",
+    "site": "nguyenhuong",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/favicon.ico",
+        "destination": "/favicon.ico"
+      },
+      {
+        "source": "/assets/resume.pdf",
+        "destination": "/assets/resume.pdf"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
